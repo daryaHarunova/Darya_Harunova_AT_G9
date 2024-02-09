@@ -8,10 +8,12 @@ package bubbles;
 public class Bubble {
     private final double VOLUME = 0.3;
     private String gasComposition;
+
     public Bubble(String newGasComposition) {
         this.gasComposition = newGasComposition;
     }
-    public void cramp() {System.out.println("Cramp!");
-    }
 
+    public void cramp() {
+        System.out.println("Cramp!");
+    }
 }

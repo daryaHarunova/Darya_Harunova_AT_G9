@@ -1,4 +1,3 @@
-//поменять местами первый и последний элементы и вывести результат в консоль
 
 package bubbles;
 
@@ -10,7 +9,5 @@ public class Runner {
         firtBottle.open();
         secondBottle.open();
         thirdBottle.open();
-        }
-
-
     }
+}

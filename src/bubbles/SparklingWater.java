@@ -5,16 +5,18 @@
 
 package bubbles;
 
-public class SparklingWater extends Water{
-     private Bubble [] bubbles;
-     public void pump(Bubble[] newBubbles) {
-         this.bubbles = newBubbles;
-     };
-    public void degas(){
-        for (int i = 0; i <bubbles.length; i++){
-            bubbles[i].cramp();
+public class SparklingWater extends Water {
+    private Bubble[] bubbles;
+
+    public void pump(Bubble[] newBubbles) {
+        this.bubbles = newBubbles;
+    }
+
+    public void degas() {
+        for (Bubble bubble : bubbles) {
+            bubble.cramp();
         }
     }
-    }
+}
 
 

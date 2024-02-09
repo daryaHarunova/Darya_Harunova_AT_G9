@@ -3,10 +3,9 @@
 
 package bubbles;
 
-    public abstract class Water {
-        private String color;
-        private String transparency;
-        private String smell;
-        private int temperature;
-
+public abstract class Water {
+    private String color;
+    private String transparency;
+    private String smell;
+    private int temperature;
 }
