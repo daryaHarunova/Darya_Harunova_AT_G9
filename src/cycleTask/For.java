@@ -7,7 +7,6 @@ public class For {
             if (i % 2 == 1) {
                 System.out.println(i);
             }
-
         }
     }
 }

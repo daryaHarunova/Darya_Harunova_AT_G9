@@ -19,7 +19,7 @@ public class Descending {
 
         System.out.println(Arrays.toString(array));
     }
-    }
+}
 
 
 

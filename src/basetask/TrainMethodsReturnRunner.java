@@ -12,5 +12,4 @@ public class TrainMethodsReturnRunner {
         System.out.println("метод returnNewByte вернул " + train.returnNewByte((byte) 5));
         System.out.println("метод returnNewBoolean вернул " + train.returnNewBoolean(true));
     }
-
 }
