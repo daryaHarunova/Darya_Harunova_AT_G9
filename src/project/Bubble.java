@@ -7,10 +7,10 @@ package project;
 
 public class Bubble {
     private final double VOLUME = 0.3;
-    private String gasComposition;
+    private String gas;
 
-    public Bubble(String newGasComposition) {
-        this.gasComposition = newGasComposition;
+    public Bubble(String newGas) {
+        this.gas = newGas;
     }
 
     public void cramp() {

@@ -16,6 +16,7 @@ public class SparklingWater extends Water {
         for (Bubble bubble : bubbles) {
             bubble.cramp();
         }
+        this.bubbles = new Bubble[0];
     }
 }
 
