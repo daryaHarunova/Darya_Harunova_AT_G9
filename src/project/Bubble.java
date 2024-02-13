@@ -6,7 +6,7 @@
 package project;
 
 public class Bubble {
-    private final double VOLUME = 0.3;
+    private final double volume = 0.3;
     private String gas;
 
     public Bubble(String newGas) {
@@ -15,6 +15,10 @@ public class Bubble {
 
     public void cramp() {
         System.out.println("Cramp!");
+    }
+
+    public double getVolume(){
+        return volume;
     }
 }
 
