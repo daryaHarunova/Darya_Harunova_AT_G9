@@ -3,21 +3,11 @@ package homework.day5.playground.essence.craft.hand;
 import homework.day5.playground.essence.Matter;
 
 public abstract class Container extends Matter {
-    protected double weight;
-    String name;
+    protected String name;
 
-    public Container(double weight, int mass) {
+    public Container(double weight, int mass, String name) {
         super(weight, mass);
-    }
-
-    @Override
-    public double getWeight() {
-        return weight;
-    }
-
-    @Override
-    public void setWeight(double weight) {
-        this.weight = weight;
+        this.name = name;
     }
 
     public String getName() {

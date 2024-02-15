@@ -2,15 +2,15 @@ package homework.day5.playground.essence;
 
 public abstract class Matter {
     protected double weight;
-    int mass;
+    protected int mass;
 
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
 
     public Matter(double weight, int mass) {
         this.weight = weight;
         this.mass = mass;
+    }
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 
     public void setMass(int mass) {
