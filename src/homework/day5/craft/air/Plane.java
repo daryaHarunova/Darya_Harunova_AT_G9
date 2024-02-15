@@ -1,4 +1,6 @@
 package homework.day5.craft.air;
 
-public class Plane {
+import homework.day5.Matter;
+
+public abstract class Plane extends Matter {
 }

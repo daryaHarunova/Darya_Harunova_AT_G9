@@ -1,4 +1,6 @@
 package homework.day5.craft.hand;
 
-public class Bottle {
+import homework.day5.Matter;
+
+public abstract class Bottle extends Matter {
 }

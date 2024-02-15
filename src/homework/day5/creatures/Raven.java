@@ -1,4 +1,6 @@
 package homework.day5.creatures;
 
-public class Raven {
+import homework.day5.Matter;
+
+public abstract class Raven extends Matter {
 }

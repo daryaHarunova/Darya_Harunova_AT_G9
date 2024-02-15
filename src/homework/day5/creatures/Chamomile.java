@@ -1,4 +1,6 @@
 package homework.day5.creatures;
 
-public class Chamomile {
+import homework.day5.Matter;
+
+public abstract class Chamomile extends Matter {
 }

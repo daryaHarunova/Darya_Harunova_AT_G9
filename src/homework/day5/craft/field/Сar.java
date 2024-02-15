@@ -1,4 +1,6 @@
 package homework.day5.craft.field;
 
-public class Сar {
+import homework.day5.Matter;
+
+public abstract class Сar extends Matter {
 }
