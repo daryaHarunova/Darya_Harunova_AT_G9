@@ -1,6 +1,7 @@
 package homework.day5.playground.essence.creatures.animal.insect;
 
-import homework.day5.playground.essence.Matter;
-
 public class Fly extends Insect {
+    public Fly(double weight, int mass, String name) {
+        super(weight, mass, name);
+    }
 }

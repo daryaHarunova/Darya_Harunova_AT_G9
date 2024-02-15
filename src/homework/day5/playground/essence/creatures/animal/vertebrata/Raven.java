@@ -1,6 +1,7 @@
 package homework.day5.playground.essence.creatures.animal.vertebrata;
 
-import homework.day5.playground.essence.Matter;
-
 public class Raven extends Vertebrata {
+    public Raven(double weight, int mass, String name) {
+        super(weight, mass, name);
+    }
 }
