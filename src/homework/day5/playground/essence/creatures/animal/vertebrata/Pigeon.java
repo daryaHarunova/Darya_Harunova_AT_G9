@@ -2,7 +2,7 @@ package homework.day5.playground.essence.creatures.animal.vertebrata;
 
 
 public class Pigeon extends Vertebrata {
-    public Pigeon(double weight, int mass, String name) {
-        super(weight, mass, name);
+    public Pigeon(int mass, String name) {
+        super(mass, name);
     }
 }
