@@ -5,8 +5,8 @@ import homework.day5.playground.essence.Matter;
 public abstract class Plant extends Matter {
     protected String name;
 
-    public Plant(double weight, int mass, String name) {
-        super(weight, mass);
+    public Plant(int mass, String name) {
+        super(mass);
         this.name = name;
     }
 

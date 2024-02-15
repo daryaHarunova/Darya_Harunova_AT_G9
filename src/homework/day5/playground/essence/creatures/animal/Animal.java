@@ -14,8 +14,8 @@ public abstract class Animal extends Matter {
         this.name = name;
     }
 
-    public Animal(double weight, int mass, String name) {
-        super(weight, mass);
+    public Animal(int mass, String name) {
+        super(mass);
         this.name = name;
     }
 
