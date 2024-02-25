@@ -9,7 +9,7 @@ import java.util.List;
 public class Figure {
     public static void main(String[] args) throws IOException {
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
-        BufferedWriter out = new BufferedWriter(new FileWriter("new_file.txt"));
+        BufferedWriter out = new BufferedWriter(new FileWriter("figures.txt"));
         for (String figure : figures) {
             out.write(figure + "-");
         }
