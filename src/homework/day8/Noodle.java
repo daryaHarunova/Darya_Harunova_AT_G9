@@ -16,7 +16,11 @@ public class Noodle {
 
         System.out.println("Task1");
         for (String noodle : noodles) {
-            System.out.print(noodle + "-");
+            if (noodles.indexOf(noodle) == noodles.size() - 1) {
+                System.out.print(noodle);
+            } else {
+                System.out.print(noodle + "-");
+            }
         }
 
         //Заменить в каждом слове буквы "а" на букву "о"
