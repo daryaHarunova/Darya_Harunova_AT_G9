@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Bird {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         List<String> birds = Arrays.asList("Чайка", "Дрозд", "Бусел", "Голубь", "Воробей", "Цапля");
 
         //Проитерировать список через for-each и отпечатать слова в консоль с новой строки в виде --Чайка--
@@ -14,6 +14,19 @@ public class Bird {
         }
 
         //Посчитать сколько птиц содержат больше 1 гласной и вывести в число в консоль
+        String vowel = "аеёиоуыэюя";
+        for (String bird : birds) {
+            char[] arr = bird.toCharArray();
+            int countVowel = 0;
+            for (char bukva : arr) {
+                if (vowel.contains(String.valueOf(bukva))) {
+                    countVowel++;
+                }
+            }
+            if (countVowel > 1) {
+                System.out.println("Птица " + bird + " имеет " + countVowel + " гласных");
+            }
+        }
 
         //Проитерировать список по индексу и отпечатать слова в консоль через пробел
 
@@ -23,7 +36,7 @@ public class Bird {
 
         //Заменить 3-й элемент списка на Синица
 
-        birds.set(3, "Синица");
+        birds.set(2, "Синица");
         System.out.println(birds);
 
 

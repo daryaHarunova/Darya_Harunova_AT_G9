@@ -32,7 +32,7 @@ public class Noodle {
         //Проитерировать список по индексу и отпечатать слова в консоль через пробел
 
         for (int i = 0; i < noodles.size(); i++) {
-            System.out.println(noodles.get(i));
+            System.out.print(noodles.get(i) + " ");
         }
 
 

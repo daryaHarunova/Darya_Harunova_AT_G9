@@ -10,22 +10,22 @@ import java.util.Map;
 
 public class Sands {
     public static void main(String[] args) {
-        List<Sand> sands = new ArrayList<>();
+        List<Sand> sandbox = new ArrayList<>();
 
-        sands.add(new Sand(2, "Речной"));
-        sands.add(new Sand(4, "Речной"));
-        sands.add(new Sand(2, "Карьерный"));
-        sands.add(new Sand(7, "Речной"));
+        sandbox.add(new Sand(2, "Речной"));
+        sandbox.add(new Sand(4, "Речной"));
+        sandbox.add(new Sand(2, "Карьерный"));
+        sandbox.add(new Sand(7, "Речной"));
 
         //Проитерировать список через for-each и отпечатать вес в консоль через пробел
 
-        for (Sand sand : sands) {
+        for (Sand sand : sandbox) {
             System.out.print(sand.getMass() + " ");
         }
 
         //Проитерировать список через for-each и отпечатать имена в консоль через пробел
 
-        for (Sand sand : sands) {
+        for (Sand sand : sandbox) {
             System.out.print(sand.getName() + " ");
         }
         //Создать пустую карту, где ключом является целое число, а значением объект песка
@@ -34,8 +34,8 @@ public class Sands {
 
         //Заполнить карту значениями из предыдущего списка, используя в качестве ключа любое уникальное число
 
-        for (int i = 0; i < sands.size(); i++){
-            myHashMap.put(i, sands.get(i));
+        for (int i = 0; i < sandbox.size(); i++){
+            myHashMap.put(i, sandbox.get(i));
         }
         System.out.println(myHashMap);
 
@@ -54,7 +54,7 @@ public class Sands {
         //Проитерировать карту и отпечатать пары ключ-значение в консоль
 
         for(Map.Entry<Integer, Sand> entry: myHashMap.entrySet()){
-            System.out.println(entry.getKey() + entry.getValue().toString());
+            System.out.println(entry);
         }
     }
 }

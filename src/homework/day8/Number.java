@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Number {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
 
         numbers.add(3342);
@@ -56,7 +56,7 @@ public class Number {
         //Проитерировать список через for-each и отпечатать числа в консоль через пробел
 
         for (Integer number: numbers){
-            System.out.println(number + " ");
+            System.out.print(number + " ");
         }
 
     }

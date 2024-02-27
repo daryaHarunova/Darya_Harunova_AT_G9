@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class Chairs {
     public static void main(String[] args) {
-        List<Chair> chairs = Arrays.asList(
+        List<Chair> furniture  = Arrays.asList(
                 new Chair(1, 2),
                 new Chair(4, 2),
                 new Chair(2, 4)
@@ -20,7 +20,7 @@ public class Chairs {
 
       //Проитерировать список через for-each и отпечатать произведение высоты на ширину в консоль через пробел
 
-      for (Chair chair: chairs){
+      for (Chair chair: furniture ){
           System.out.print(chair.getHeight() * chair.getWidth() + " ");
       }
       //Создать пустую карту, где ключом является целое число, а значением объект стула
@@ -29,8 +29,8 @@ public class Chairs {
 
       //Заполнить карту значениями из предыдущего списка, используя в качестве ключа любое уникальное число
 
-        for (int i = 0; i < chairs.size(); i++){
-            myHashMap.put(i, chairs.get(i));
+        for (int i = 0; i < furniture .size(); i++){
+            myHashMap.put(i, furniture .get(i));
         }
         System.out.println(myHashMap);
 
@@ -49,7 +49,8 @@ public class Chairs {
         //Проитерировать карту и отпечатать пары ключ-значение в консоль
 
         for(Map.Entry<Integer, Chair>entry:myHashMap.entrySet()){
-            System.out.println(entry.getKey() + entry.getValue().toString());
+            System.out.println(entry);
+
         }
     }
 

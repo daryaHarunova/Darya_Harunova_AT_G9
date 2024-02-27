@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class City {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         List<String> cities = new ArrayList<>();
 
         cities.add("Минск");

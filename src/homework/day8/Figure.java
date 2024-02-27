@@ -11,9 +11,14 @@ public class Figure {
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
         BufferedWriter out = new BufferedWriter(new FileWriter("figures.txt"));
         for (String figure : figures) {
-            out.write(figure + "-");
+            if (figures.indexOf(figure) == figures.size() - 1) {
+                out.write(figure);
+            } else {
+                out.write(figure + "-");
+            }
         }
         out.close();
+
 
         int count = 0;
         for (String figure : figures) {
@@ -27,7 +32,7 @@ public class Figure {
             System.out.print(figures.get(i) + " ");
         }
         try {
-            figures.add(3, "Треугольник");
+            figures.add(2, "Треугольник");
         } catch (RuntimeException error) {
             System.out.println();
             System.out.println(error);
@@ -35,7 +40,7 @@ public class Figure {
         System.out.println(figures);
 
         for (String element : figures) {
-            System.out.println(element);
+            System.out.print(element + " ");
         }
 
 

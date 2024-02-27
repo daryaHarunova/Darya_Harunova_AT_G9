@@ -37,17 +37,17 @@ public class Element {
 
         //На 4-ю позицию добавить Spinner
 
-        elements.add(4, "Spinner");
+        elements.add(3, "Spinner");
         System.out.println("\n" + elements);
 
         //Удалить 2-й элемент списка
 
-        elements.remove(2);
+        elements.remove(1);
         System.out.println(elements);
 
         //Заменить 5-й элемент на Switch
 
-        elements.set(5, "Switch");
+        elements.set(4, "Switch");
         System.out.println(elements);
 
         //Проитерировать список через for-each и отпечатать слова в консоль через пробел
