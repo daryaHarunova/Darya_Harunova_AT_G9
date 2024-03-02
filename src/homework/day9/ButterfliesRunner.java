@@ -1,3 +1,9 @@
+//Создать пустой список стрингов butterflies (через new ArrayList)
+//Добавить в список 4 бабочки (Common blue, Swallowtail, Aglais io, Common blue)
+//Добавить к каждому элементу кавычки
+//Оставить только те слова, которые содержат букву "a" и букву "о"
+//Вывести слова в консоль с новой строки
+
 package homework.day9;
 
 import java.util.ArrayList;
@@ -10,8 +16,6 @@ public class ButterfliesRunner {
         butterflies.add("Swallowtail");
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
-
-        //Добавить к каждому элементу кавычки
 
         butterflies.stream().map(s -> "\"" + s + "\"")
                 .filter(s -> s.contains("a") && s.contains("o"))
