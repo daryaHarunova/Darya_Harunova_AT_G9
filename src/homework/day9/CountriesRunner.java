@@ -14,21 +14,10 @@ public class CountriesRunner {
     public static void main(String[] args) {
         List<String> countries = Stream.of("Андора", "Португалия", "Англия", "Замбия").toList();
 
-         countries.stream()
-                .filter(country -> country.chars()
-                        .mapToObj(c -> (char) c)
-                        .anyMatch(c -> "аеёиоуыэюя".contains(c.toString().toLowerCase())))
+        countries.stream()
+                .filter(s -> s.toLowerCase().matches(".*[аеёиоуыюя].*"))
                 .filter(s -> s.length() < 7)
                 .map(String::toUpperCase)
                 .forEach(System.out::println);
-
-
-
-
-
-
-
     }
-
-
 }

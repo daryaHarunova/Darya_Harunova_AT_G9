@@ -7,6 +7,7 @@
 package homework.day9;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ButterfliesRunner {
@@ -17,7 +18,9 @@ public class ButterfliesRunner {
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
 
-        butterflies.stream().map(s -> "\"" + s + "\"")
+        butterflies.stream()
+                .flatMap(s -> Arrays.stream(s.split(" ")))
+                .map(s -> "\"" + s + "\"")
                 .filter(s -> s.contains("a") && s.contains("o"))
                 .forEach(System.out::println);
     }
